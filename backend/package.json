@@ -1,7 +1,7 @@
 {
-  "name": "ips-exam-dbms-backend",
+  "name": "exam-matrix-backend",
   "version": "1.0.0",
-  "description": "Backend API for IPS Academy University Examination & Moderation DBMS",
+  "description": "Backend REST API for ExamMatrix: University Examination & Moderation DBMS (Academic Project)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",

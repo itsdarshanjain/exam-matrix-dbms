@@ -115,11 +115,11 @@ export default function App() {
       <footer className="no-print mt-auto border-t border-slate-200/80 bg-white py-4 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <div>
-            <span className="font-semibold text-slate-700">IPS Academy, Indore</span> — Department of CSE | Major DBMS Project by <span className="font-medium text-brand-600">Darshan Jain</span> (0808CS241091, T3)
+            <span className="font-semibold text-slate-700">ExamMatrix</span> — Academic RDBMS Demonstration Project by <span className="font-medium text-brand-600">Darshan Jain</span> (0808CS241091, 5th Sem CSE)
           </div>
           <div className="flex items-center gap-4">
             <a 
-              href="https://github.com/itsdarshanjain/ips-academy-exam-dbms" 
+              href="https://github.com/itsdarshanjain/exam-matrix-dbms" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-slate-600 hover:text-brand-600 flex items-center gap-1.5 transition-colors font-medium"

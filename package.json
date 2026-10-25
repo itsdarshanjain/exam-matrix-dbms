@@ -1,7 +1,7 @@
 {
-  "name": "ips-academy-exam-dbms",
+  "name": "exam-matrix-dbms",
   "version": "1.0.0",
-  "description": "University Examination & Moderation DBMS with Auto-Seat Allocation - Darshan Jain (0808CS241091)",
+  "description": "ExamMatrix: University Examination & Moderation DBMS with Auto-Seat Allocation (Academic Project) - Darshan Jain (0808CS241091)",
   "scripts": {
     "start": "node backend/server.js",
     "server": "node backend/server.js",
@@ -9,6 +9,6 @@
     "dev": "npm --prefix frontend run dev",
     "test-dbms": "node backend/test_api.js"
   },
-  "keywords": ["mysql", "rdbms", "stored-procedures", "triggers", "3nf", "ips-academy"],
+  "keywords": ["mysql", "rdbms", "stored-procedures", "triggers", "3nf", "exam-management", "academic-project"],
   "author": "Darshan Jain (0808CS241091)"
 }

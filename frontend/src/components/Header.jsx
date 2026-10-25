@@ -45,11 +45,11 @@ export default function Header({
                   ExamMatrix
                 </span>
                 <span className="text-[10px] font-semibold px-2 py-0.5 rounded-full bg-brand-50 text-brand-700 border border-brand-200">
-                  Exam Cell
+                  Academic Project
                 </span>
               </div>
               <p className="text-xs text-slate-500">
-                University Examination &amp; Seating System
+                Academic Examination &amp; Seating DBMS Prototype
               </p>
             </div>
           </div>
@@ -79,11 +79,11 @@ export default function Header({
           {/* Right Controls */}
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/itsdarshanjain/ips-academy-exam-dbms"
+              href="https://github.com/itsdarshanjain/exam-matrix-dbms"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 border border-slate-200 transition-colors shadow-2xs"
-              title="View on GitHub"
+              title="View Project on GitHub"
             >
               <Github className="w-3.5 h-3.5 text-slate-700" />
               <span className="hidden sm:inline">GitHub</span>

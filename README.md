@@ -1,18 +1,20 @@
-# 🏛️ University Examination & Moderation DBMS with Auto-Seat Allocation
-### IPS Academy, Institute of Engineering & Science, Indore
-#### Department of Computer Science & Engineering (CSE)
+# 🎓 ExamMatrix: University Examination & Moderation DBMS
+### Academic Relational Database Management System (RDBMS) Demonstration Project
 
-[![Database](https://img.shields.io/badge/Database-MySQL%208.0%20%7C%20Supabase%20PostgreSQL-blue?style=for-the-badge&logo=mysql)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
-[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite%20%2B%20TailwindCSS-61DAFB?style=for-the-badge&logo=react)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
-[![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express%20REST%20API-339933?style=for-the-badge&logo=node.js)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
-[![Normalization](https://img.shields.io/badge/Schema-3NF%20%2F%20BCNF%20Certified-success?style=for-the-badge)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
+[![Database](https://img.shields.io/badge/Database-MySQL%208.0%20%7C%20Supabase%20PostgreSQL-blue?style=for-the-badge&logo=mysql)](https://github.com/itsdarshanjain/exam-matrix-dbms)
+[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite%20%2B%20TailwindCSS-61DAFB?style=for-the-badge&logo=react)](https://github.com/itsdarshanjain/exam-matrix-dbms)
+[![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express%20REST%20API-339933?style=for-the-badge&logo=node.js)](https://github.com/itsdarshanjain/exam-matrix-dbms)
+[![Normalization](https://img.shields.io/badge/Schema-3NF%20%2F%20BCNF%20Certified-success?style=for-the-badge)](https://github.com/itsdarshanjain/exam-matrix-dbms)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
 
-> **Major Academic Database Management System (DBMS) Project & Viva Voce Submission**  
-> **Student Author:** Darshan Jain  
-> **Enrollment Number:** `0808CS241091` | **Section:** T3 (5th Semester B.Tech CSE)  
-> **Faculty Guide:** Prof. Preeti Agrawal (Associate Professor & Chief Exam Moderator)  
-> **GitHub Repository:** [https://github.com/itsdarshanjain/ips-academy-exam-dbms](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
+> [!WARNING]
+> ### ⚠️ Academic Project & Simulation Disclaimer
+> **ExamMatrix** is an independent student academic project created solely for coursework demonstration, lab experimentation, and viva voce evaluation. **It is NOT the official, live, or internal examination software of any university, college, or administrative exam cell.** All sample dataset records, student roll numbers, and faculty entries are synthetic academic test fixtures designed to demonstrate relational database integrity.
+
+> **Project Author:** Darshan Jain  
+> **Enrollment ID:** `0808CS241091` | **Degree Track:** B.Tech Computer Science & Engineering (5th Semester)  
+> **Academic Subject:** Database Management Systems (DBMS Major Laboratory Project)  
+> **GitHub Repository:** [https://github.com/itsdarshanjain/exam-matrix-dbms](https://github.com/itsdarshanjain/exam-matrix-dbms)
 
 ---
 
@@ -25,7 +27,7 @@
    - [Stored Procedures & Nested Cursors](#1-stored-procedures-nested-cursors)
    - [Database Triggers & Constraint Enforcers](#2-active-database-triggers-signals)
    - [Relational Views for Reporting](#3-relational-views)
-   - [User-Defined Functions (UDF)](#4-user-defined-function-rgpv-standard)
+   - [User-Defined Functions (UDF)](#4-user-defined-function-grading-standard)
 6. [Interactive Application Modules](#-interactive-application-modules)
 7. [Repository Structure](#-repository-structure)
 8. [Installation & Setup Guide](#-installation--setup-guide)
@@ -37,18 +39,18 @@
 
 ## 🎯 Executive Overview
 
-**ExamMatrix** is an enterprise-grade, fully normalized **Relational Database Management System (RDBMS)** built to resolve core logistical, integrity, and compliance bottlenecks in university examinations:
+**ExamMatrix** is an educational, fully normalized **Relational Database Management System (RDBMS)** designed to solve key logistical, integrity, and moderation bottlenecks in university examination environments:
 - **Spatial Collision-Free Seat Allocation:** Eliminates seat double-booking and room overcapacity using nested database cursors and spatial constraints.
 - **Automated Borderline Moderation:** Implements university grace marks guidelines with strict row-level locking and transaction checkpoints (`SAVEPOINT`).
 - **Trigger-Driven Forensic Audit Logging:** Every mark alteration is immutably captured via `BEFORE`/`AFTER UPDATE` triggers.
-- **Real-Time Admit Card Generation:** Renders official printable hall tickets populated dynamically via multi-table relational views (`v_StudentHallTicket`).
+- **Real-Time Admit Card Generation:** Renders printable hall tickets populated dynamically via multi-table relational views (`v_StudentHallTicket`).
 - **Live SQL X-Ray Drawer:** Transparent inspection of every underlying raw SQL statement, execution latency, and transaction boundary directly in the web client.
 
 ---
 
 ## 🛡️ Architectural Principles & Zero-ORM Policy
 
-Unlike common CRUD applications that rely on heavy Object-Relational Mappers (ORMs like Prisma, Hibernate, or Sequelize) or unstructured NoSQL engines:
+Unlike standard web applications that rely on heavy Object-Relational Mappers (ORMs like Prisma, Hibernate, or Sequelize) or unstructured NoSQL engines:
 1. **Engine-Level Integrity:** ACID integrity, check constraints, foreign key cascades, and temporal checks execute directly within the RDBMS storage engine (InnoDB / Postgres).
 2. **Deterministic SQL:** All business logic for seating allocations, capacity checks, and moderation algorithms is contained in pure SQL Stored Procedures and Triggers.
 3. **No Hidden Queries:** Zero magic queries or N+1 query surprises. Every database interaction emits raw SQL visible in the UI.
@@ -78,7 +80,7 @@ flowchart TD
         V["Relational Views: v_StudentHallTicket, v_HallOccupancy"]
         TRG["Active Database Triggers: Capacity, Collision & Audit"]
         SP["Stored Procedures: sp_AutoAllocateSeats, sp_AutoMod"]
-        FN["UDF: fn_ComputeGrade (RGPV Standards)"]
+        FN["UDF: fn_ComputeGrade (Grading Standards)"]
     end
 
     Client <-->|REST API JSON + sqlExecuted Payload| Server
@@ -148,8 +150,8 @@ erDiagram
 - **`v_StudentHallTicket`**: A 5-table relational join synthesizing student identity, exam metadata, allocated hall, bench coordinates, and assigned invigilator for official admit card generation.
 - **`v_HallOccupancySummary`**: Uses `LEFT OUTER JOIN` and aggregate `COUNT()` grouped by hall to calculate real-time percentage occupancy and remaining seats.
 
-### 4. User-Defined Function (RGPV Standard)
-- **`fn_ComputeGrade(p_marks DECIMAL, p_max DECIMAL)`**: Deterministically computes letter grades (`O`, `A+`, `A`, `B+`, `B`, `C`, `F`) according to university percentile standards.
+### 4. User-Defined Function (Grading Standard)
+- **`fn_ComputeGrade(p_marks DECIMAL, p_max DECIMAL)`**: Deterministically computes letter grades (`O`, `A+`, `A`, `B+`, `B`, `C`, `F`) according to standard percentile thresholds.
 
 ---
 
@@ -157,9 +159,9 @@ erDiagram
 
 1. **Analytical Executive Dashboard:** High-level metrics for student registrations, active halls, allocation percentages, and pending moderation counts.
 2. **2D Dynamic Classroom Seat Matrix:** Spatial visual grid rendering allocated students, empty benches, capacity barometers, and one-click seat reassignments.
-3. **Official Printable Admit Card:** High-resolution printable hall ticket format with verification QR placeholder and university insignia.
+3. **Official Printable Admit Card:** High-resolution printable hall ticket format with verification QR placeholder and institutional insignia.
 4. **Marks Moderation & Borderline Engine:** Grade distribution breakdown, grace mark allocation, and live audit log stream.
-5. **Relational Viva Voce Explorer:** Interactive SQL query laboratory for faculty inspections featuring `EXPLAIN` query plans, relational division ($R \div S$), recursive self-joins, and subquery benchmarks.
+5. **Relational Viva Voce Explorer:** Interactive SQL query laboratory featuring `EXPLAIN` query plans, relational division ($R \div S$), recursive self-joins, and subquery benchmarks.
 6. **Live SQL X-Ray Drawer:** Persistent floating inspector revealing the exact SQL query executed, transaction isolation, latency (ms), and server state for every user interaction.
 
 ---
@@ -167,7 +169,7 @@ erDiagram
 ## 📂 Repository Structure
 
 ```
-ips-academy-exam-dbms/
+exam-matrix-dbms/
 ├── .env.example                               # Environment template (NO sensitive keys)
 ├── .gitignore                                 # Git ignore protecting credentials & builds
 ├── package.json                               # Unified project scripts & metadata
@@ -176,11 +178,11 @@ ips-academy-exam-dbms/
 │
 ├── database/                                  # Pure Relational Database Definitions
 │   ├── schema.sql                             # 3NF DDL (Tables, Constraints, Indexes)
-│   ├── seed.sql                               # Realistic IPS Academy academic sample data
+│   ├── seed.sql                               # Academic test fixtures & sample records
 │   ├── triggers.sql                           # Capacity, collision, and audit triggers
 │   ├── procedures.sql                         # Stored procedures with nested cursors
 │   ├── views.sql                              # Multi-table reporting views
-│   └── functions.sql                          # fn_ComputeGrade RGPV standard UDF
+│   └── functions.sql                          # fn_ComputeGrade standard UDF
 │
 ├── backend/                                   # Node.js + Express.js API Server
 │   ├── .env.example                           # Backend environment template
@@ -230,8 +232,8 @@ ips-academy-exam-dbms/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/itsdarshanjain/ips-academy-exam-dbms.git
-cd ips-academy-exam-dbms
+git clone https://github.com/itsdarshanjain/exam-matrix-dbms.git
+cd exam-matrix-dbms
 ```
 
 ### 2. Configure Environment Variables
@@ -314,16 +316,14 @@ Open your browser at **`http://localhost:3000`**.
 
 ## 👨‍💻 Academic Project Identity
 
-- **Student:** Darshan Jain
-- **Enrollment Number:** `0808CS241091`
-- **Class / Section:** B.Tech CSE, 5th Semester, Section T3
-- **Institution:** IPS Academy, Institute of Engineering & Science, Indore (M.P.)
-- **Affiliation:** Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal
-- **Faculty Guide:** Prof. Preeti Agrawal (Associate Professor, Dept. of CSE)
-- **GitHub:** [@itsdarshanjain](https://github.com/itsdarshanjain) | [Repository Link](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
+- **Student Author:** Darshan Jain
+- **Enrollment ID:** `0808CS241091`
+- **Course:** B.Tech Computer Science & Engineering (5th Semester)
+- **Project Type:** DBMS Major Laboratory Project & Relational Model Implementation
+- **GitHub:** [@itsdarshanjain](https://github.com/itsdarshanjain) | [Repository Link](https://github.com/itsdarshanjain/exam-matrix-dbms)
 
 ---
 
 <p align="center">
-  <b>ExamMatrix &copy; 2026 Darshan Jain. Built with pure RDBMS integrity for IPS Academy CSE Examination Cell.</b>
+  <b>ExamMatrix &copy; 2026 Darshan Jain. Pure RDBMS Academic Demonstration Project.</b>
 </p>

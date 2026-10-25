@@ -1,5 +1,5 @@
 # ==============================================================================
-# Git Ignore Configuration - IPS Academy University Exam DBMS
+# Git Ignore Configuration - ExamMatrix University Exam DBMS (Academic Project)
 # ==============================================================================
 
 # 1. Environment & Secrets (STRICT: Never commit real credentials)
