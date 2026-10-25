@@ -2,17 +2,17 @@
 ### IPS Academy, Institute of Engineering & Science, Indore
 #### Department of Computer Science & Engineering (CSE)
 
-[![Database](https://img.shields.io/badge/Database-MySQL%208.0%20%7C%20Supabase%20PostgreSQL-blue?style=for-the-badge&logo=mysql)](https://github.com/codebyu/ips-academy-exam-dbms)
-[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite%20%2B%20TailwindCSS-61DAFB?style=for-the-badge&logo=react)](https://github.com/codebyu/ips-academy-exam-dbms)
-[![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express%20REST%20API-339933?style=for-the-badge&logo=node.js)](https://github.com/codebyu/ips-academy-exam-dbms)
-[![Normalization](https://img.shields.io/badge/Schema-3NF%20%2F%20BCNF%20Certified-success?style=for-the-badge)](https://github.com/codebyu/ips-academy-exam-dbms)
+[![Database](https://img.shields.io/badge/Database-MySQL%208.0%20%7C%20Supabase%20PostgreSQL-blue?style=for-the-badge&logo=mysql)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
+[![Frontend](https://img.shields.io/badge/Frontend-React%2018%20%2B%20Vite%20%2B%20TailwindCSS-61DAFB?style=for-the-badge&logo=react)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
+[![Backend](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express%20REST%20API-339933?style=for-the-badge&logo=node.js)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
+[![Normalization](https://img.shields.io/badge/Schema-3NF%20%2F%20BCNF%20Certified-success?style=for-the-badge)](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
 [![License](https://img.shields.io/badge/License-MIT-purple?style=for-the-badge)](LICENSE)
 
 > **Major Academic Database Management System (DBMS) Project & Viva Voce Submission**  
 > **Student Author:** Darshan Jain  
 > **Enrollment Number:** `0808CS241091` | **Section:** T3 (5th Semester B.Tech CSE)  
 > **Faculty Guide:** Prof. Preeti Agrawal (Associate Professor & Chief Exam Moderator)  
-> **GitHub Repository:** [https://github.com/codebyu/ips-academy-exam-dbms](https://github.com/codebyu/ips-academy-exam-dbms)
+> **GitHub Repository:** [https://github.com/itsdarshanjain/ips-academy-exam-dbms](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
 
 ---
 
@@ -230,7 +230,7 @@ ips-academy-exam-dbms/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/codebyu/ips-academy-exam-dbms.git
+git clone https://github.com/itsdarshanjain/ips-academy-exam-dbms.git
 cd ips-academy-exam-dbms
 ```
 
@@ -320,7 +320,7 @@ Open your browser at **`http://localhost:3000`**.
 - **Institution:** IPS Academy, Institute of Engineering & Science, Indore (M.P.)
 - **Affiliation:** Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV), Bhopal
 - **Faculty Guide:** Prof. Preeti Agrawal (Associate Professor, Dept. of CSE)
-- **GitHub:** [@codebyu](https://github.com/codebyu) | [Repository Link](https://github.com/codebyu/ips-academy-exam-dbms)
+- **GitHub:** [@itsdarshanjain](https://github.com/itsdarshanjain) | [Repository Link](https://github.com/itsdarshanjain/ips-academy-exam-dbms)
 
 ---
 

@@ -119,7 +119,7 @@ export default function App() {
           </div>
           <div className="flex items-center gap-4">
             <a 
-              href="https://github.com/codebyu/ips-academy-exam-dbms" 
+              href="https://github.com/itsdarshanjain/ips-academy-exam-dbms" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-slate-600 hover:text-brand-600 flex items-center gap-1.5 transition-colors font-medium"
